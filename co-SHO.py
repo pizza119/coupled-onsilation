@@ -16,6 +16,10 @@ while SB == 0:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             SB = 1
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            touch = 1
+        elif event.type == pygame.MOUSEBUTTONUP:
+            touch = 0
 
 
     pygame.display.update()
